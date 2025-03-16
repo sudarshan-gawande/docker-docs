@@ -9,7 +9,6 @@ Welcome to the **Docker Documentation Repository**! This repository contains com
 ## 📂 Folder Structure
 ```
 docker-docs/
-│── README.md                      # Overview of the documentation
 │── images/                        # Folder containing images used in documentation
 │   ├── docker-installation.png    # Docker installation image
 │   ├── docker-overview.png        # Docker overview image
@@ -34,6 +33,8 @@ docker-docs/
 │── troubleshooting/               # Common Docker issues and fixes
 │   ├── TROUBLESHOOTING.md         # General troubleshooting guide
 │   ├── COMMON_ERRORS.md           # List of common Docker errors and solutions
+│── LICENSE.md                     # License of the documentation
+│── README.md                      # Overview of the documentation
 ```
 
 ---
@@ -67,7 +68,7 @@ docker-docs/
 We welcome contributions! Fork this repository, make your improvements, and submit a pull request. 🚀
 
 ## 📜 License
-This project is open-source and available under the [MIT License](LICENSE).
+This project is open-source and available under the [MIT License](LICENSE.md).
 
 ---
 ## 🔗 Connect with Me
