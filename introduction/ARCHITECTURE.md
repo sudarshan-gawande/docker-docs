@@ -58,7 +58,7 @@ Docker networking allows containers to communicate with each other and external 
    ```
 
 ## Docker Architecture Diagram
-![Docker Architecture](images/docker-architecture.png)
+![Docker Architecture](/images/docker-architecture.png)
 
 ## Conclusion
 Docker provides a highly efficient containerization framework that improves **portability, scalability, and resource efficiency**. By understanding its architecture, you can leverage its full potential for application development and deployment.
