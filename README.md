@@ -46,6 +46,7 @@ docker-docs/
 - [Basic Commands](commands/BASIC_COMMANDS.md)
 - [Advanced Commands](commands/ADVANCED_COMMANDS.md)
 - [Docker Compose Commands](commands/DOCKER_COMPOSE.md)
+- [Docker Cheat Sheet](commands/CHEAT_SHEET.md)
 
 ### 4. Follow Best Practices
 - [Docker Security](best-practices/DOCKER_SECURITY.md)
