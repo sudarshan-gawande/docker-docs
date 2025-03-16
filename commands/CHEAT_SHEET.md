@@ -1,27 +1,36 @@
 # Docker Commands Cheat Sheet
 
-## Docker Installation
+## General Commands
 ```sh
-# Verify Docker Installation
+# Check Docker version
 docker --version
+
+# Display system-wide information
+docker info
 ```
 
-## Docker Images
+## Images
 ```sh
 # List all images
 docker images
 
-# Pull an image
+# Pull an image from Docker Hub
 docker pull <image_name>
+
+# Build an image from a Dockerfile
+docker build -t <image_name> .
 
 # Remove an image
 docker rmi <image_name>
 
-# Build an image from a Dockerfile
-docker build -t <image_name> .
+# Save an image as a tar file
+docker save -o my_image.tar <image_name>
+
+# Load an image from a tar file
+docker load -i my_image.tar
 ```
 
-## Docker Containers
+## Containers
 ```sh
 # List running containers
 docker ps
@@ -46,12 +55,9 @@ docker restart <container_id>
 
 # Remove a container
 docker rm <container_id>
-
-# Remove all stopped containers
-docker container prune
 ```
 
-## Docker Logs & Monitoring
+## Logs and Monitoring
 ```sh
 # Show logs of a container
 docker logs <container_id>
@@ -66,22 +72,7 @@ docker stats
 docker inspect <container_id>
 ```
 
-## Docker Volumes
-```sh
-# List volumes
-docker volume ls
-
-# Create a volume
-docker volume create <volume_name>
-
-# Remove a volume
-docker volume rm <volume_name>
-
-# Remove all unused volumes
-docker volume prune
-```
-
-## Docker Networks
+## Networking
 ```sh
 # List networks
 docker network ls
@@ -99,6 +90,21 @@ docker network disconnect <network_name> <container_id>
 docker network rm <network_name>
 ```
 
+## Volumes
+```sh
+# List volumes
+docker volume ls
+
+# Create a volume
+docker volume create <volume_name>
+
+# Remove a volume
+docker volume rm <volume_name>
+
+# Remove all unused volumes
+docker volume prune
+```
+
 ## Docker Compose
 ```sh
 # Start containers using docker-compose
@@ -114,7 +120,7 @@ docker-compose restart
 docker-compose logs
 ```
 
-## Docker Cleanup
+## Cleanup and Pruning
 ```sh
 # Remove all stopped containers
 docker container prune
@@ -127,9 +133,12 @@ docker network prune
 
 # Remove all unused volumes
 docker volume prune
+
+# Remove all unused Docker objects
+docker system prune -a
 ```
 
-## Docker Registry
+## Registry and Image Management
 ```sh
 # Login to Docker Hub
 docker login
@@ -144,28 +153,32 @@ docker push <repository>:<tag>
 docker pull <repository>:<tag>
 ```
 
-## Docker Exec & Attach
+## Advanced Commands
 ```sh
 # Execute a command inside a running container
 docker exec -it <container_id> /bin/bash
 
 # Attach to a running container
 docker attach <container_id>
-```
 
-## Docker Save & Load
-```sh
-# Save an image to a tar file
-docker save -o <image.tar> <image_name>
-
-# Load an image from a tar file
-docker load -i <image.tar>
-```
-
-## Docker Export & Import
-```sh
 # Export a container to a tar file
-docker export -o <container.tar> <container_id>
+docker export -o my_container.tar <container_id>
 
 # Import a container from a tar file
-docker import <container.tar> <image_name>
+docker import my_container.tar my_imported_image
+```
+
+## Debugging and Troubleshooting
+```sh
+# Check Docker logs
+docker logs <container_id>
+
+# Inspect a container
+docker inspect <container_id>
+
+# Restart Docker daemon
+sudo systemctl restart docker
+```
+
+## Conclusion
+This cheat sheet provides a quick reference for managing Docker images, containers, networks, volumes, and more. Master these commands for efficient containerized application development and management.

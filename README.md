@@ -1,9 +1,12 @@
-# Docker Documentation
+# 🚀 Docker Documentation
 
-## Overview
-Welcome to the Docker documentation repository. This repository contains essential information about Docker, including installation, setup, commands, best practices, and troubleshooting.
+![Docker Banner](/images/docker-overview.png)
 
-## Folder Structure
+## 🌟 Overview
+Welcome to the **Docker Documentation Repository**! This repository contains comprehensive information about **Docker**, covering **installation, setup, commands, best practices, and troubleshooting** to help you master containerization efficiently. 
+
+---
+## 📂 Folder Structure
 ```
 docker-docs/
 │── README.md                      # Overview of the documentation
@@ -24,7 +27,7 @@ docker-docs/
 │   ├── DOCKER_COMPOSE.md          # Commands specific to Docker Compose
 │   ├── NETWORKING.md              # Docker networking commands
 │   ├── VOLUMES.md                 # Docker volume management commands
-│   ├── CHEAT_SHEET.md             # Docker Cheat sheet 
+│   ├── CHEAT_SHEET.md             # Docker Cheat Sheet
 │── best-practices/                # Docker best practices and security
 │   ├── DOCKER_SECURITY.md         # Security best practices
 │   ├── DOCKERFILE_BEST.md         # Best practices for writing Dockerfiles
@@ -33,34 +36,44 @@ docker-docs/
 │   ├── COMMON_ERRORS.md           # List of common Docker errors and solutions
 ```
 
-## Getting Started
-### 1. Install Docker
+---
+## 🚀 Getting Started
+### 🛠 1. Install Docker
 ![Docker Installation](images/docker-installation.png)
 - [Installation on AWS EC2](setup/INSTALLATION_AWS_EC2.md)
 
-### 2. Learn the Basics
+### 📖 2. Learn the Basics
 - [Introduction to Docker](introduction/INTRODUCTION.md)
 - [Docker Architecture](introduction/ARCHITECTURE.md)
 
-### 3. Use Docker Commands
+### 🖥️ 3. Use Docker Commands
+![Docker Commands](images/docker-commands.png)
 - [Basic Commands](commands/BASIC_COMMANDS.md)
 - [Advanced Commands](commands/ADVANCED_COMMANDS.md)
 - [Docker Compose Commands](commands/DOCKER_COMPOSE.md)
 - [Docker Cheat Sheet](commands/CHEAT_SHEET.md)
 
-### 4. Follow Best Practices
+### 🔒 4. Follow Best Practices
+![Docker Best Practices](/images/docker-best-practices.png)
 - [Docker Security](best-practices/DOCKER_SECURITY.md)
 - [Writing Efficient Dockerfiles](best-practices/DOCKERFILE_BEST.md)
 
-### 5. Troubleshoot Issues
+### 🛠 5. Troubleshoot Issues
 - [General Troubleshooting](troubleshooting/TROUBLESHOOTING.md)
 - [Common Errors & Fixes](troubleshooting/COMMON_ERRORS.md)
 
-## Contributing
-If you’d like to contribute, please fork this repository and submit a pull request with any improvements or additions.
+---
+## 🤝 Contributing
+We welcome contributions! Fork this repository, make your improvements, and submit a pull request. 🚀
 
-## License
+## 📜 License
 This project is open-source and available under the [MIT License](LICENSE).
 
-## Contact
-For questions, feel free to reach out via GitHub issues.
+---
+## 🔗 Connect with Me
+🌐 **Portfolio**: [sudarshangawande.com](https://sudarshangawande.com)  
+💼 **LinkedIn**: [Sudarshan Gawande](https://www.linkedin.com/in/sudarshan-gawande/)  
+📧 **Email**: [sudarshangawande98@gmail.com](mailto:sudarshangawande98@gmail.com)  
+🔗 **GitHub**: [Sudarshan Gawande](https://github.com/sudarshan-gawande)  
+
+💙 *Thank you for visiting! Happy Dockering! 🐳*
